@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>加载解析XML文件</title>
+    <script src="xmlDoc.js"></script>
+</head>
+<body>
+    <script>
+    //解析PHP动态生成的xml数据
+    var xml = XML.cNew("xml.php");
+    var doc =xml.doc;
+    //从XML DOM获取数据显示到HTML DOM
+    document.write(xml.node("from"));
+    </script>
+</body>
+</html>
